@@ -1,23 +1,28 @@
-import {UserController} from "./controller/UserController";
+import {BacheUserController} from "./controller/BacheUserController";
 
 export const Routes = [{
     method: "get",
-    route: "/users",
-    controller: UserController,
+    route: "/bacheusers",
+    controller: BacheUserController,
     action: "all"
 }, {
     method: "get",
-    route: "/users/:id",
-    controller: UserController,
+    route: "/bacheusers/:id",
+    controller: BacheUserController,
     action: "one"
 }, {
     method: "post",
-    route: "/users",
-    controller: UserController,
+    route: "/bacheusers",
+    controller: BacheUserController,
     action: "save"
 }, {
     method: "delete",
-    route: "/users/:id",
-    controller: UserController,
+    route: "/bacheusers/:id",
+    controller: BacheUserController,
     action: "remove"
+}, {
+    method: "patch",
+    route: "/bacheusers/:id",
+    controller: BacheUserController,
+    action: "patch"
 }];
